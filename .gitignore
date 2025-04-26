@@ -1,0 +1,97 @@
+# Node modules
+node_modules/
+
+# Build output
+.next/
+out/
+
+# Production files
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# dotenv environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm/
+
+# Coverage directory used by testing tools
+coverage/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Next.js export static files
+out/
+
+# Local Linting cache
+.cache/
+
+# Ignore next config if it's private
+next.config.js.local
+
+# Ignore vercel build cache
+.vercel/
+
+# Turbo repo cache
+turbo/
+
+# Ignore Mac system files
+.AppleDouble
+.LSOverride
+Icon?
+
+# Firebase cache
+.firebase/
+
+# Docker files
+docker-compose.override.yml
+
+# Ignore test snapshots
+__snapshots__/
+
+# Laravel-style Storage (optional for upload folders)
+storage/
+public/storage/
+
+# Ignore Composer vendor if backend included
+vendor/
+
+# Ignore backend cache folders
+bootstrap/cache/
+
+node_modules/
+public/images/LightBurn 1.7.04.zip
+
+node_modules/
+.next/
+out/
+public/images/*.zip
+storage/
+public/storage/
+.env

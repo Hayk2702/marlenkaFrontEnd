@@ -1,0 +1,117 @@
+@import 'variables';
+@import 'mixins';
+@import 'extendsStart';
+@import 'extendsEnd';
+
+.account_section {
+	.account_line {
+		display: flex;
+		width: 100%;
+
+		nav {
+			width: 280px;
+			min-height: 415px;
+			padding-right: 10px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+
+			li {
+				width: 100%;
+				margin-bottom: 15px;
+				border-bottom: 1px solid #525252;
+				padding-bottom: 15px;
+
+				&.log_out {
+					margin-bottom: 0;
+					border: none;
+				}
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				font-size: 14px;
+				line-height: 20px;
+				color: #525252;
+				align-items: center;
+
+				svg path {
+					fill: #525252;
+					width: 22px;
+				}
+
+				&.user {
+					svg path {
+						fill: none;
+						width: 22px;
+					}
+				}
+
+				&.logout {
+					svg path {
+						fill: none;
+						width: 22px;
+					}
+				}
+
+				&.active-link {
+					pointer-events: none;
+					color: #CE090F;
+
+					svg path {
+						fill: #CE090F;
+						color: #CE090F;
+					}
+				}
+			}
+		}
+	}
+
+	.inner_wrapper {
+		padding-left: 90px;
+	}
+}
+
+
+@media (max-width: 1199px) {
+	.account_section .inner_wrapper {
+		padding-left: 40px;
+	}
+
+	.userInfoForm {
+		column-gap: 25px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.userInfoForm {
+		gap: 20px;
+		grid-template-columns: 1fr;
+	}
+
+	.account_section {
+		.inner_wrapper {
+			padding-left: 0px;
+			margin-top: 50px;
+		}
+
+		.account_line {
+			flex-direction: column;
+
+			nav {
+				min-height: auto;
+				width: 100%;
+				padding-right: 0;
+			}
+		}
+	}
+}
