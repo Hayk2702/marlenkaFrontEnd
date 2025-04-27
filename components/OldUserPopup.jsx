@@ -34,7 +34,7 @@ function OldUserPopup() {
       }
     });
     if (response.ok) {
-      console.log('true');
+      // console.log('true');
     } else {
       console.error('Submission failed');
     }

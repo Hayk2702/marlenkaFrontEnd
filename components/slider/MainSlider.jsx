@@ -37,10 +37,10 @@ function MainSlider({ sliderData }) {
             </div>
             <div className="cover_container">
               <div className="slider_content">
-                <div className=" text-[#E6C384] relative slider_main_title whitespace-nowrap font-qwigley text-[135px] laptopHorizontal:text-[100px] tablet:text-[80px] ">{slider.title}</div>
-                <div className="slider_description">{slider.description}</div>
-                <Link 
-                  href={slider?.category_id ? `/productListing?category=${slider?.category_id}` : `/product/${slider.product_id}`} 
+                <div className={`text-[${slider.color_1}] relative slider_main_title whitespace-nowrap font-qwigley text-[135px] laptopHorizontal:text-[100px] tablet:text-[80px] `}>{slider.title}</div>
+                <div className={`slider_description text-[${slider.color_2}]`}>{slider.description}</div>
+                <Link
+                  href={slider?.category_id ? `/productListing?category=${slider?.category_id}` : `/product/${slider.product_id}`}
                   className="slider_btn normal_btn"
                 >
                   Discover more

@@ -95,3 +95,7 @@ public/images/*.zip
 storage/
 public/storage/
 .env
+public/videos/*
+public/videos/homeVideo.mp4/public/videos/homeVideo.mp4
+/public/videos/homeVideo.mp4
+/public/images/*

@@ -99,7 +99,7 @@ const Checkout = () => {
 	};
 
 	const userInfoSubmit = async (dataForm) => {
-		console.log('Submitted form data:', dataForm);
+		// console.log('Submitted form data:', dataForm);
 	};
 
 	const saveInfo = async () => {
